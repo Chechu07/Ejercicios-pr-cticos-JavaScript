@@ -76,6 +76,23 @@ console.log('El precio más alto es $' + precioAlto);
 //Una escuela necesita una calculadora básica que, a partir de dos números, muestre la suma, la resta, la multiplicación y la división de ambos.
 //Aclaración: para la división, se debe dividir al mayor por el menor, y devolver un mensaje de error si se intenta dividir por cero.
 
+let calcNum1 = Number(prompt('Ingrese el primer número'))
+let calcNum2 = Number(prompt('Ingrese el segundo número'))
+
+let suma = calcNum1  + calcNum2
+console.log('La suma es: ' + suma);
+
+let resta = calcNum1  - calcNum2
+console.log('La resta es: ' + resta);
+
+let multiplicacion = calcNum1  * calcNum2
+console.log('La multiplicación es: ' + multiplicacion);
+
+let mayorDivision = Math.max(calcNum1, calcNum2) 
+let menorDivision = Math.min(calcNum1, calcNum2) 
+
+let division = mayorDivision / menorDivision
+console.log('La división del mayor entre el menor es: ' + division);
 
 
 
@@ -83,10 +100,17 @@ console.log('El precio más alto es $' + precioAlto);
 //Una tienda de ropa desea calcular el total a pagar por remeras. Cada una cuesta $4000. Si el cliente compra más de cinco, recibe un 20% de descuento.
 
 let remeras = 4000
-let descuentoRemeras = 20
+let descRemeras = 20 
 let totalRemeras = Number(prompt('¿Cuantas remeras compro?'))
 
+let totalSDescuento = remeras * totalRemeras 
 
+let totalCDescuento = (totalSDescuento  * descRemeras )  / 100
+let monto = totalSDescuento - totalCDescuento
+
+let totalAbonar = (totalRemeras > 5) ? monto : totalSDescuento
+
+console.log('El total a abonar es: $' + totalAbonar)
 
 
 
@@ -96,3 +120,18 @@ let totalRemeras = Number(prompt('¿Cuantas remeras compro?'))
 const edad = prompt('¿Ingrese su edad')
 const altura = Number(prompt('Ingrese su altura'))
 
+const ingreso = (edad > 12 && altura > 1.50) ? 'Si, puede ingresar' : 'Usted, no cumple con el requisito'
+
+console.log(ingreso);
+
+//EJERCICIO 10:
+//Un cajero automático requiere un programa que permita ingresar el saldo disponible y el monto a retirar. Si hay suficiente dinero, debe mostrar el nuevo saldo; si no, indicar “Saldo insuficiente”.
+
+const saldoDisponible = Number(prompt('Ingrese el saldo disponible'))
+const montoARetirar = Number(prompt('¿Que monto desea retirar?'))
+
+const nuevoSaldo = saldoDisponible - montoARetirar
+
+const  cajeroAutomatico = (montoARetirar <= saldoDisponible) ? 'Su nuevo saldo es $' + nuevoSaldo : 'Saldo insuficiente' 
+
+console.log( cajeroAutomatico)
