@@ -1,26 +1,4 @@
-//EJERCICIO 1:
-// Una tienda de golosinas necesita un programa que calcule el precio total de una compra. Cada caramelo cuesta $150. 
-// El programa debe solicitar cuántos caramelos comprará el cliente y mostrar el total a pagar.
 
-
-let precioCaramelo = 150
-let compra = Number(prompt('¿Cuantos caramelos desea comprar?'))
-
-let precioTotal = precioCaramelo * compra
-
-console.log('Usted compro ' + compra + ' caramelos ' + ' el precio total es de: ' + precioTotal)
-
-
-//EJERCICIO 2:
-// Un cine necesita calcular el total a cobrar por la venta de entradas. Cada entrada cuesta $2500. Si el cliente compra tres o más, obtiene un 10% de descuento. Mostrar el total final.
-
-let entradaCine = 2500
-let totalEntrada = Number(prompt('¿Cuantas entradas desea comprar?'))
-let total = entradaCine * totalEntrada
-let descuento = total * 0.1 *  Math.min(Math.floor(totalEntrada / 3), 1)
-
-let precioFinal = total - descuento
-console.log('El total de sus entradas es de: $' + precioFinal)
 
 
 //EJERCICIO 3:
