@@ -1,76 +1,9 @@
 
 
 
-//EJERCICIO 3:
-// Un restaurante desea ofrecer una calculadora de propinas. Se debe ingresar el monto de la comida y el porcentaje de propina, y mostrar el total a pagar incluyendo la propina.
-
-const Comida = Number(prompt('¿Cuál es el monto de la comida?'))
-const Propinas = Number(prompt('Que porcentaje de propina desea dar?'))
-
-const Porcentaje = (Comida / 100 ) * Propinas
-const Total = Comida + Porcentaje
-console.log('El total a abonar es de: $' + Total)
 
 
-//EJERCICIO 4:
-// Una aplicación de bienvenida necesita generar un mensaje personalizado. Se debe ingresar el nombre del usuario y su comida favorita, y mostrar un mensaje del tipo: “Hola Ana, tu comida favorita es la pizza”.
 
-let usuario = prompt('Ingrese su nombre, por favor')
-let comidaFavorita = prompt('Ingrese su comida favorita')
-
-console.log('Hola ' + usuario + ', ' + 'su comida favorita es la ' + comidaFavorita)
-
-
-//EJERCICIO 5:
-// Una pastelería necesita calcular el precio final de una torta. El costo base es de $1200 y cada vela cuesta $20 adicionales. El sistema debe mostrar el total según la cantidad de velas.
-
-let costoBase = 1200
-let vela = 20
-let velasTotal = Number(prompt('¿Cuantas velas lleva?'))
-
-let costoTotal = costoBase + vela * velasTotal
-
-console.log('El precio total según la cantidad de velas es de: $' + costoTotal)
-
-
-//EJERCICIO 6:
-//Un supermercado solicita un programa que permita ingresar los precios de tres productos y mostrar el total, el promedio y el precio más alto.
-
-let precioProducto = Number(prompt('Ingrese el precio del primer producto'))
-let precioProducto2 = Number(prompt('Ingrese el precio del segundo producto'))
-let precioProducto3 = Number(prompt('Ingrese el precio del tercer producto'))
-
-
-let totalProductos = precioProducto + precioProducto2 + precioProducto3
-let promedio = totalProductos / 3
-let precioAlto = Math.max(precioProducto, precioProducto2, precioProducto3)
-
-console.log('El total de los 3 productos es de $' + totalProductos)
-console.log('El promedio es $' + promedio);
-console.log('El precio más alto es $' + precioAlto);
-
-
-//EJERCICIO 7:
-//Una escuela necesita una calculadora básica que, a partir de dos números, muestre la suma, la resta, la multiplicación y la división de ambos.
-//Aclaración: para la división, se debe dividir al mayor por el menor, y devolver un mensaje de error si se intenta dividir por cero.
-
-let calcNum1 = Number(prompt('Ingrese el primer número'))
-let calcNum2 = Number(prompt('Ingrese el segundo número'))
-
-let suma = calcNum1  + calcNum2
-console.log('La suma es: ' + suma);
-
-let resta = calcNum1  - calcNum2
-console.log('La resta es: ' + resta);
-
-let multiplicacion = calcNum1  * calcNum2
-console.log('La multiplicación es: ' + multiplicacion);
-
-let mayorDivision = Math.max(calcNum1, calcNum2) 
-let menorDivision = Math.min(calcNum1, calcNum2) 
-
-let division = mayorDivision / menorDivision
-console.log('La división del mayor entre el menor es: ' + division);
 
 
 
