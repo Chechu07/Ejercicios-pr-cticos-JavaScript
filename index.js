@@ -1,53 +1,6 @@
 
 
 
-
-
-
-
-
-
-//EJERCICIO 8:
-//Una tienda de ropa desea calcular el total a pagar por remeras. Cada una cuesta $4000. Si el cliente compra más de cinco, recibe un 20% de descuento.
-
-let remeras = 4000
-let descRemeras = 20 
-let totalRemeras = Number(prompt('¿Cuantas remeras compro?'))
-
-let totalSDescuento = remeras * totalRemeras 
-
-let totalCDescuento = (totalSDescuento  * descRemeras )  / 100
-let monto = totalSDescuento - totalCDescuento
-
-let totalAbonar = (totalRemeras > 5) ? monto : totalSDescuento
-
-console.log('El total a abonar es: $' + totalAbonar)
-
-
-
-//EJERCICIO 9:
-//Un parque de diversiones necesita un sistema que determine si una persona puede subir a la montaña rusa. Solo pueden hacerlo quienes tengan más de 12 años y midan más de 1.50 metros.
-
-const edad = prompt('¿Ingrese su edad')
-const altura = Number(prompt('Ingrese su altura'))
-
-const ingreso = (edad > 12 && altura > 1.50) ? 'Si, puede ingresar' : 'Usted, no cumple con el requisito'
-
-console.log(ingreso);
-
-//EJERCICIO 10:
-//Un cajero automático requiere un programa que permita ingresar el saldo disponible y el monto a retirar. Si hay suficiente dinero, debe mostrar el nuevo saldo; si no, indicar “Saldo insuficiente”.
-
-const saldoDisponible = Number(prompt('Ingrese el saldo disponible'))
-const montoARetirar = Number(prompt('¿Que monto desea retirar?'))
-
-const nuevoSaldo = saldoDisponible - montoARetirar
-
-const  cajeroAutomatico = (montoARetirar <= saldoDisponible) ? 'Su nuevo saldo es $' + nuevoSaldo : 'Saldo insuficiente' 
-
-console.log( cajeroAutomatico)
-
-
 //EJERCICIO 11:
 //Una institución educativa desea un sistema que determine si un alumno aprobó un examen. Se ingresa una nota del 0 al 10 y el programa debe indicar si aprobó (nota 6 o más) o no.
 
