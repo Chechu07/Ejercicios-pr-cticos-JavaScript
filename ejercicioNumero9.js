@@ -4,10 +4,10 @@
 
 const age = 12
 const height = 1.50
-let minimum_age = 12
-let minimum_height = 1.5
+const minimumAge = 12
+const minimumHeight = 1.5
 
-if(age > minimum_age && height > minimum_height) {
+if(age > minimumAge && height > minimumHeight) {
     console.log('Usted, puede ingresar')
 } else{
     console.log('Usted, no cumple con el requisito')

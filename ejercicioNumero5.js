@@ -6,6 +6,6 @@ const baseCost = 1200
 const candle = 20
 const totalCandle = 5
 
-const totalCost = baseCost + candle * totalCandle
+const totalCost = baseCost + (candle * totalCandle)
 
 console.log('The total price according to the number of candles is: $' + totalCost)

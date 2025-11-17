@@ -4,9 +4,9 @@
 // Se ingresa una nota del 0 al 10 y el programa debe indicar si aprobó (nota 6 o más) o no.
 
 const notesStudent = Number(prompt('Ingrese la nota del alumno'))
-let student_exam_passed = 6
+const studentExamPassed = 6
 
-if(notesStudent >= student_exam_passed) {
+if(notesStudent >= studentExamPassed) {
     console.log('Alumno aprobado')
 } else {
     console.log('Alumno no aprobado')

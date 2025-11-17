@@ -4,14 +4,12 @@
 
 const cinemaTicket = 2500
 const buyTickets = 4
-let total;
+let total = cinemaTicket * buyTickets
+let discount = total * 0.9
 
 if(buyTickets >= 3) {
-    const discount = (cinemaTicket * buyTickets) * 0.1
-    const total = cinemaTicket * buyTickets
     const priceFinal = total - discount
     console.log('El total de la compra de ticket es $' + priceFinal)
 } else{
-    const total = cinemaTicket * buyTickets
     console.log('La compra de ticket es de: $' + total);
 }

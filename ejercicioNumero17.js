@@ -1,15 +1,15 @@
 //EJERCICIO 17
 //Una escuela quiere calcular el promedio de tres notas de un estudiante y mostrar si aprobó (promedio igual o mayor a 6) o no.
 
-let noteOne = 6
-let noteTwo = 5
-let noteThree = 7
+const firstNote = 6 
+const secondNote = 5
+const thirdNote = 7
 
-let average_greater_than_or_equal = 6
+const averageGreaterThanOrEqual = 6
 
-let averageNotes = (noteOne + noteTwo + noteThree) / 3
+const averageNotes = (firstNote + secondNote + thirdNote) / 3
 
-if(averageNotes >= average_greater_than_or_equal) {
+if(averageNotes >= averageGreaterThanOrEqual) {
     console.log('Aprobado');
 }else{
     console.log('Desaprobado');   

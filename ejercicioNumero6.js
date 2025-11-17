@@ -2,22 +2,22 @@
 //Un supermercado solicita un programa que permita ingresar los precios de tres productos y mostrar el total,
 //  el promedio y el precio más alto.
 
-const priceProductOne = 28
-const priceProductTwo = 34
-const priceProductThree = 45
-let highPrice;
+const firstProductPrice = 28 
+const secondProductPrice = 34  
+const thirdProductPrice = 45 
+let highestPrice;
 
-const totalProducts = priceProductOne + priceProductTwo + priceProductThree
+const totalProducts = firstProductPrice + secondProductPrice + thirdProductPrice
 const average = totalProducts / 3
 
-if (priceProductOne >= priceProductTwo && priceProductOne >= priceProductThree){
-    highPrice = priceProductOne
-} else if(priceProductTwo >= priceProductOne && priceProductTwo >= priceProductThree) {
-    highPrice = priceProductTwo
+if (firstProductPrice >= secondProductPrice && firstProductPrice >= thirdProductPrice){
+    highestPrice = firstProductPrice
+} else if(secondProductPrice >= firstProductPrice && secondProductPrice >= thirdProductPrice) {
+    highestPrice = secondProductPrice
 } else{
-    highPrice = priceProductThree
+    highestPrice = thirdProductPrice
 }
 
 console.log('El total de los 3 productos es de $' + totalProducts)
 console.log('El promedio es $' + average);
-console.log('El precio más alto es $' + highPrice);
+console.log('El precio más alto es $' + highestPrice);

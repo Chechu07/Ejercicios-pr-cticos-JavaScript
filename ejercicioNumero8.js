@@ -1,5 +1,6 @@
 //EJERCICIO 8:
-//Una tienda de ropa desea calcular el total a pagar por remeras. Cada una cuesta $4000. Si el cliente compra más de cinco, recibe un 20% de descuento.
+//Una tienda de ropa desea calcular el total a pagar por remeras. 
+// Cada una cuesta $4000. Si el cliente compra más de cinco, recibe un 20% de descuento.
 
 const tShirts = 4000
 const discountShirts = 20 
@@ -9,9 +10,7 @@ let totalPay;
 let totalWithoutDiscount = tShirts * totalTShirts 
 
 if(totalTShirts > 5) {
-    let discountedTotal = (totalWithoutDiscount  * discountShirts )  / 100
-    let amount = totalWithoutDiscount - discountedTotal
-    totalPay = amount
+    totalPay = totalWithoutDiscount * 0.80
     
 } else{
     totalPay = totalWithoutDiscount
