@@ -5,5 +5,6 @@
 const mealPrice = 20000
 const tipPercentage = 2
 
-const percentage = mealPrice * 1.02
-console.log('El total a abonar es de: $' + percentage)
+const percentage = (mealPrice * tipPercentage) / 100
+const total = mealPrice + percentage
+console.log('El total a abonar es de: $' + total)
