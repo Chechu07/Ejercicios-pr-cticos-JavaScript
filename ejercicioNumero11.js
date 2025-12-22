@@ -3,11 +3,22 @@
 //Una institución educativa desea un sistema que determine si un alumno aprobó un examen. 
 // Se ingresa una nota del 0 al 10 y el programa debe indicar si aprobó (nota 6 o más) o no.
 
-const notesStudent = Number(prompt('Ingrese la nota del alumno'))
-const studentExamPassed = 6
+// const notesStudent = Number(prompt('Ingrese la nota del alumno'))
+// const studentExamPassed = 6
 
-if(notesStudent >= studentExamPassed) {
-    console.log('Alumno aprobado')
-} else {
-    console.log('Alumno no aprobado')
+// if(notesStudent >= studentExamPassed) {
+//     console.log('Alumno aprobado')
+// } else {
+//     console.log('Alumno no aprobado')
+// }
+
+function enterNote(note) {
+   const promotion = 6
+
+   if(note >= promotion) {
+      return 'Alumno aprobado'
+   }else{
+      return 'Alumno desaprobado'
+   }
 }
+enterNote(6)
